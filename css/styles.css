@@ -93,6 +93,10 @@ body {
 }
 /**-------------HEADER-------------*/
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-navigation {
   display: flex;
   justify-content: space-between;
@@ -101,7 +105,11 @@ body {
 }
 .header-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
+}
+
+.header-list:last-child {
+  margin-right: 0;
 }
 
 .header-list-addres {
@@ -112,8 +120,7 @@ body {
 }
 
 .logo-web {
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
+  margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -203,6 +210,8 @@ body {
 }
 
 .first-section {
+  padding-top: 188px;
+  padding-bottom: 188px;
   font-size: 56px;
   line-height: 1.07em;
   letter-spacing: 0.02em;
@@ -211,6 +220,10 @@ body {
 }
 
 .section-btn {
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
   background: var(--iris);
   font-family: inherit;
@@ -262,16 +275,33 @@ body {
   color: var(--back-color);
 }
 
+/*       fourth-section    */
+
+.fourth-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .benefits {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
+}
+
+.benefits:first-child {
+  width: calc((100% - 72px) / 4);
+}
+
+.benefits:last-child {
+  margin-right: 0;
 }
 
 .subtitles {
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--navy-blue);
 }
 
@@ -280,6 +310,27 @@ body {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   color: var(--slate);
+  text-align: center;
+}
+
+/*      our-team */
+
+.titles {
+  margin-bottom: 72px;
+}
+
+.our-team {
+  gap: 24px;
+}
+.our-team:last-child {
+  margin-right: 0;
+}
+
+.product-designer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .portf-titles {
@@ -289,6 +340,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   text-transform: capitalize;
+}
+
+/*      our-portfolio    */
+
+.our-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  padding-top: 120px;
+  margin-bottom: 120px;
 }
 
 .card {
@@ -315,6 +376,17 @@ body {
   color: var(--navy-blue);
   background-color: var(--back-color);
 }
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.logo-ftr {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .logo-studio-footer {
   font-family: 'Raleway', sans-serif;
   font-style: normal;

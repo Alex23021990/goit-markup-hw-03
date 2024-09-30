@@ -5,20 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>webstudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -107,29 +104,23 @@
           </ul>
         </div>
       </section>
-      <!-- /first section -->
-
-      <!-- third section -->
-      <!-- <section class="main-third-section">
-        <h2 class="titles">What are we doing</h2>
-        <ul class="list">
-          <li><img src="./images/img-1.jpg" alt="studio" width="360" /></li>
-          <li><img src="./images/img-2.jpg" alt="studio" width="360" /></li>
-          <li><img src="./images/img-3.jpg" alt="studio" width="360" /></li>
-        </ul>
-      </section> -->
-      <!-- /third section -->
 
       <!-- our team section -->
       <section class="main-fourth-section section-padding">
         <div class="container">
           <h2 class="titles">Our Team</h2>
           <ul class="our-team list">
-            <li class="link-team-card">
-              <img src="./images/photo1.jpg" alt="Mark Guerrero" width="264" />
-              <h3 class="subtitles">Mark Guerrero</h3>
-              <p class="description">Product Designer</p>
-            </li>
+            <div class="product-designer">
+              <li class="link-team-card">
+                <img
+                  src="./images/photo1.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                />
+                <h3 class="subtitles">Mark Guerrero</h3>
+                <p class="description">Product Designer</p>
+              </li>
+            </div>
             <li class="link-team-card">
               <img src="./images/photo2.jpg" alt="Tom Ford" width="264" />
               <h3 class="subtitles">Tom Ford</h3>
@@ -187,32 +178,6 @@
             <h2 class="portf-titles">Online Courses</h2>
             <p class="description">Marketing</p>
           </li>
-          <!-- </li>
-        <li class="card">
-          <a class="link" href="">
-            <img
-              src="./images/img7.jpg"
-              alt="Instagram Stories Concept"
-              width="360"
-            />
-            <h2 class="portf-titles">Instagram Stories Concept</h2>
-            <p class="description">Design</p>
-          </a>
-        </li>
-        <li class="card">
-          <a class="link" href="">
-            <img src="./images/img8.jpg" alt="Organic Food" width="360" />
-            <h2 class="portf-titles">Organic Food</h2>
-            <p class="description">Web Site</p>
-          </a>
-        </li>
-        <li class="card">
-          <a class="link" href="">
-            <img src="./images/img9.jpg" alt="Fresh Coffee" width="360" />
-            <h2 class="portf-titles">Fresh Coffee</h2>
-            <p class="description">Web Site</p>
-          </a>
-        </li> -->
         </ul>
       </div>
     </section>
@@ -221,7 +186,7 @@
     <!-- footer section -->
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo-web link"
+        <a href="./index.html" class="logo-web logo-ftr link"
           >Web<span class="logo-studio-footer">Studio</span></a
         >
         <p class="description-footer">
